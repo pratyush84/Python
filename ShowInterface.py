@@ -19,7 +19,7 @@ child.sendline(switch_pw)
 child.expect('>')
 child.sendline('en')
 child.expect('Password:')
-child.sendline('cisco')
+child.sendline('enable_pwd')
 child.expect('#')
 
 child.sendline('show running-config interface GigabitEthernet 1/0/1')
